@@ -126,7 +126,8 @@
 
 
 
-
+    const nuestroTitulo = document.querySelector('h1');
+    console.log(nuestroTitulo);
 
 
 /*

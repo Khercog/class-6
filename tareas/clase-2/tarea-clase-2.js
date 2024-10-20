@@ -15,30 +15,64 @@
 //
 // No se olviden de hacer un console.log para ver el resultado!
 //
-
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
+const operator = prompt("Insert +, -, *, or /");
+const num1 = 1;
+const num2 = 2;
+
+let result;
+
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+
+function divide(num1, num2) {
+  return num1 / num2;
+}
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+if (operator === "+") {
+  result = sum(num1, num2);
+} else if (operator === "-") {
+  result = subtract(num1, num2);
+} else if (operator === "/") {
+  result = divide(num1, num2);
+} else if (operator === "*") {
+  result = multiply(num1, num2);
+} else {
+  console.log("Incorrect operator");
+}
+
+console.log(`The result of ${num1} ${operator} ${num2} is ${result}`);
+
 function sumar(numero1, numero2) {
-    return numero1 + numero2;
+  return numero1 + numero2;
 }
 
 function restar(numero1, numero2) {
-    return numero1 - numero2;
+  return numero1 - numero2;
 }
 
-const operador = prompt('Ingrese + o -');
+const operador = prompt("Ingrese + o -");
 const numero1 = 1;
 const numero2 = 2;
 
 let resultado;
-if (operador === '+') {
-    resultado = sumar(numero1, numero2);
+if (operador === "+") {
+  resultado = sumar(numero1, numero2);
 } else {
-    resultado = restar(numero1, numero2);
+  resultado = restar(numero1, numero2);
 }
 
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings
 console.log(
-    `El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`
+  `El resultado de ${numero1} ${operador} ${numero2} es ${resultado}`
 );
-
