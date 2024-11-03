@@ -1,16 +1,11 @@
-.oculto {
+.hidden {
     display: none; 
 }
 
-fieldset {
-    border-width: 2px; /* Ancho del borde */
-    max-width: 700px;
-    border-style: solid; /* Estilo del borde (puede ser solid, dashed, dotted, etc.) */
-    border-color: #000000; /* Color del borde */
-    padding: 10px; /* Espaciado interno */
+.margin-top {
+    margin-top: 1rem;
 }
 
-legend {
-    font-weight: bold;
-    color: #000000;
+.margin-left {
+    margin-left: 1rem;
 }
